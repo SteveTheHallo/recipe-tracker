@@ -247,6 +247,22 @@ img { max-width: 100%; }
 .shopping-item-name { flex: 1; }
 .shopping-item-amount { font-weight: 600; color: var(--accent); font-size: 14px; }
 
+.shopping-group { margin-bottom: 24px; }
+.shopping-group:last-child { margin-bottom: 0; }
+.shopping-group-title {
+  font-family: var(--font-display); font-size: 1.1rem; font-weight: 600;
+  color: var(--primary); padding: 6px 0 10px;
+  border-bottom: 2px solid var(--primary-light); margin-bottom: 4px;
+}
+.manual-input-row { display: flex; gap: 8px; align-items: center; margin-bottom: 4px; }
+.shopping-item-row { display: flex; align-items: center; gap: 4px; }
+.remove-manual-btn {
+  flex-shrink: 0; width: 28px; height: 28px; border-radius: var(--radius-xs);
+  color: var(--text-light); font-size: 12px; transition: all 0.15s;
+  display: flex; align-items: center; justify-content: center;
+}
+.remove-manual-btn:hover { background: #FDEDEC; color: #C0392B; }
+
 .shopping-all-done {
   display: flex; align-items: center; justify-content: center; gap: 8px;
   padding: 14px 20px; margin-bottom: 18px;
